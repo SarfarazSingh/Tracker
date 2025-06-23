@@ -8,3 +8,4 @@ google-api-python-client==2.146.0
 pandas==2.3.0
 numpy>=1.26
 Pillow>=10.0
+python-dotenv
