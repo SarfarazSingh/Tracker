@@ -19,7 +19,7 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive",
 ]
 
-creds_dict = json.loads(st.secrets["GOOGLE_SHEET_CREDS"])
+creds_dict = json.loads(st.secrets["google_sheet_creds"])
 creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, SCOPE)
 client = gspread.authorize(creds)
 
